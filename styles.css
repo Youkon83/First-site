@@ -5,9 +5,21 @@ h1 {
     top: 100px;
 }
 
- .smlinks{
+.smlinks{
     position: absolute;
     left: 600px;
     top: 500px;
     color:white;
+	font-display: block;
+     }
+a {
+  font: inherit;
+  color: inherit;
+  }
+a:hover{
+  background: transparent;
+	color: #25CC67
+}
+a:focus {
+  outline: none;
 }
