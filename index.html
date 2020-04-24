@@ -9,18 +9,46 @@
 
   <script src="https://kit.fontawesome.com/5eebd02d33.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
 <body>
   
   <h1> This is my first page </h1>
  <!--social media links-->
   <div class="smlinks">
-    <a href="https://github.com/Youkon83"><b>GitHub</b></a> <i class="fab fa-github"></i><br>
+    <a href="https://github.com/Youkon83" target = "_blank"><b>GitHub</b></a> <i class="fab fa-github"></i><br>
     <a href="https://twitter.com/YoukonNeil?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @YoukonNeil</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
-    <a href="https://www.linkedin.com/in/cornelius-mccaffrey-2309b116b/"><b>LinkedIn</b></a> <i class="fab fa-linkedin"></i><br>
+    <a href="https://www.linkedin.com/in/cornelius-mccaffrey-2309b116b/" target = "_blank"><b>LinkedIn</b></a> <i class="fab fa-linkedin"></i><br>
     <a href="mailto:neil.mccaffrey83@gmail.com"><b>neil.mccaffrey83@gmail.com</b></a><i class="far fa-envelope"></i>
   </div>
   <!--social media links-->
+  <!--drop down-->
+<div class="mobile-nav">
+     <div class="menu-btn" id="menu-btn">
+ <div></div>
+ <span></span>
+ <span></span>
+ <span></span>
+     </div>
+ 
+     <div class="responsive-menu">
+        <ul>
+           <li><a href="https://github.com/Youkon83" target = "_blank"><b>GitHub</b></a> <i class="fab fa-github"></i><br></li>
+           <li><a href="https://twitter.com/YoukonNeil?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @YoukonNeil</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br></li>
+           <li><a href="https://www.linkedin.com/in/cornelius-mccaffrey-2309b116b/" target = "_blank"><b>LinkedIn</b></a> <i class="fab fa-linkedin"></i><br></li>
+           <li><a href="mailto:neil.mccaffrey83@gmail.com"><b>neil.mccaffrey83@gmail.com</b></a><i class="far fa-envelope"></i></li>
+        </ul>
+     </div>
+</div>
+<!--drop down-->
+<script type="text/javascript">
+	jQuery(function($){
+    	     $( '.menu-btn' ).click(function(){
+    	     $('.responsive-menu').toggleClass('expand')
+    	     })
+        })
+</script>
+<!--drop down-->
     <!-- <nodes.js embedding> -->
 <script type="text/javascript" src="script.js"></script>
 <script type="text/javascript">
